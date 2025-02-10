@@ -17,7 +17,7 @@ namespace WebHookTimer.Services
 
         public void GetRecordsJob()
         {
-            var timer = new System.Timers.Timer(10000);
+            var timer = new System.Timers.Timer(1000);
             timer.Elapsed += JobTimerEvent;
             timer.AutoReset = true;
             timer.Enabled = true;
